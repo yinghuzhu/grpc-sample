@@ -1,0 +1,21 @@
+syntax = "proto3";
+package sample;
+
+import "product/product.proto";
+option java_package = "name.yzhu.api.sample";
+
+service Sample {
+    rpc Ping(SamplePing) returns (SamplePingResp);
+}
+
+// ---------------------------------------------------------------------------
+
+message SamplePing {
+    string Msg = 1;
+}
+
+message SamplePingResp {
+    product.ProductResp resp = 1;
+    string Msg = 2;
+}
+

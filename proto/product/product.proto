@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package product;
+
+import "common/common.proto";
+option java_package = "name.yzhu.api.product";
+
+message ProductResp {
+    common.ResultResp resp = 1;
+}

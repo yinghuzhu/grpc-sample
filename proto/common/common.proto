@@ -1,0 +1,8 @@
+syntax = "proto3";
+package common;
+option java_package = "name.yzhu.api.common";
+
+message ResultResp {
+    int32 code = 1;
+    string msg = 2;
+}
